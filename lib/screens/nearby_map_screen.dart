@@ -33,7 +33,7 @@ class _NearbyMapScreenState extends State<NearbyMapScreen> {
     final events = eventsProvider.nearbyEventsForInterests(widget.interests);
     final center = eventsProvider.lat != null && eventsProvider.lng != null
         ? ll.LatLng(eventsProvider.lat!, eventsProvider.lng!)
-        : const ll.LatLng(19.4326, -99.1332);
+        : const ll.LatLng(4.7110, -74.0721);
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Stack(

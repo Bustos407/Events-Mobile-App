@@ -1,10 +1,10 @@
 import 'package:geolocator/geolocator.dart';
 
 class LocationService {
-  /// Falls back to Mexico City coordinates when location is unavailable
+  /// Falls back to Bogotá coordinates when location is unavailable
   /// (emulator without GPS, permission denied, etc.).
-  static const _fallbackLat = 19.4326;
-  static const _fallbackLng = -99.1332;
+  static const _fallbackLat = 4.7110;
+  static const _fallbackLng = -74.0721;
 
   Future<(double, double)> getCurrentLatLng() async {
     try {
